@@ -3,7 +3,7 @@ const path = require('path');
 
 const app = express();
 
-app.get('/.well-known/acme-challenge/:hash', (req, res , next) => {
+app.get('/.well-known/pki-validation/:hash', (req, res , next) => {
   console.log(req.params.hash);
   res.sendFile(path.resolve(`./${req.params.hash}`));
 });
