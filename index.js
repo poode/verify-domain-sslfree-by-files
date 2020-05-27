@@ -8,4 +8,4 @@ app.get('/.well-known/pki-validation/:hash', (req, res , next) => {
   res.sendFile(path.resolve(`./${req.params.hash}`));
 });
 
-app.listen(3000, () => console.log('up to verify!'));
+app.listen(25000, () => console.log('up to verify!'));
